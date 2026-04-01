@@ -1,0 +1,945 @@
+2026-03-24 22:12:39,535 [INFO] main: =======================================================
+2026-03-24 22:12:39,535 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-24 22:12:39,536 [INFO] main: =======================================================
+2026-03-24 22:12:39,659 [INFO] database: SQLite database ready → trades.db
+2026-03-24 22:12:49,819 [ERROR] main: Balance error on start: HTTPSConnectionPool(host='api-testnet.bybit.com', port=443): Max retries exceeded with url: /v5/account/wallet-balance?accountType=UNIFIED (Caused by NameResolutionError("HTTPSConnection(host='api-testnet.bybit.com', port=443): Failed to resolve 'api-testnet.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-24 22:12:49,825 [INFO] main: No pairs for today — scanning now …
+2026-03-24 22:12:49,825 [INFO] scanner: Daily pair scan starting — scoring 60 pairs …
+2026-03-24 22:12:59,980 [WARNING] scanner: Score error BTCUSDT: HTTPSConnectionPool(host='api-testnet.bybit.com', port=443): Max retries exceeded with url: /v5/market/tickers?category=linear&symbol=BTCUSDT (Caused by NameResolutionError("HTTPSConnection(host='api-testnet.bybit.com', port=443): Failed to resolve 'api-testnet.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-24 22:13:10,349 [WARNING] scanner: Score error ETHUSDT: HTTPSConnectionPool(host='api-testnet.bybit.com', port=443): Max retries exceeded with url: /v5/market/tickers?category=linear&symbol=ETHUSDT (Caused by NameResolutionError("HTTPSConnection(host='api-testnet.bybit.com', port=443): Failed to resolve 'api-testnet.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-24 22:13:20,666 [WARNING] scanner: Score error SOLUSDT: HTTPSConnectionPool(host='api-testnet.bybit.com', port=443): Max retries exceeded with url: /v5/market/tickers?category=linear&symbol=SOLUSDT (Caused by NameResolutionError("HTTPSConnection(host='api-testnet.bybit.com', port=443): Failed to resolve 'api-testnet.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-24 22:13:31,019 [WARNING] scanner: Score error BNBUSDT: HTTPSConnectionPool(host='api-testnet.bybit.com', port=443): Max retries exceeded with url: /v5/market/tickers?category=linear&symbol=BNBUSDT (Caused by NameResolutionError("HTTPSConnection(host='api-testnet.bybit.com', port=443): Failed to resolve 'api-testnet.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-24 22:13:41,187 [WARNING] scanner: Score error XRPUSDT: HTTPSConnectionPool(host='api-testnet.bybit.com', port=443): Max retries exceeded with url: /v5/market/tickers?category=linear&symbol=XRPUSDT (Caused by NameResolutionError("HTTPSConnection(host='api-testnet.bybit.com', port=443): Failed to resolve 'api-testnet.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-24 22:13:51,370 [WARNING] scanner: Score error DOGEUSDT: HTTPSConnectionPool(host='api-testnet.bybit.com', port=443): Max retries exceeded with url: /v5/market/tickers?category=linear&symbol=DOGEUSDT (Caused by NameResolutionError("HTTPSConnection(host='api-testnet.bybit.com', port=443): Failed to resolve 'api-testnet.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-24 22:14:01,543 [WARNING] scanner: Score error AVAXUSDT: HTTPSConnectionPool(host='api-testnet.bybit.com', port=443): Max retries exceeded with url: /v5/market/tickers?category=linear&symbol=AVAXUSDT (Caused by NameResolutionError("HTTPSConnection(host='api-testnet.bybit.com', port=443): Failed to resolve 'api-testnet.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-24 22:14:11,718 [WARNING] scanner: Score error LINKUSDT: HTTPSConnectionPool(host='api-testnet.bybit.com', port=443): Max retries exceeded with url: /v5/market/tickers?category=linear&symbol=LINKUSDT (Caused by NameResolutionError("HTTPSConnection(host='api-testnet.bybit.com', port=443): Failed to resolve 'api-testnet.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-24 22:19:04,534 [INFO] main: =======================================================
+2026-03-24 22:19:04,535 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-24 22:19:04,536 [INFO] main: =======================================================
+2026-03-24 22:19:04,540 [INFO] database: SQLite database ready → trades.db
+2026-03-24 22:19:14,564 [ERROR] main: Balance error on start: HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/account/wallet-balance?accountType=UNIFIED (Caused by NameResolutionError("HTTPSConnection(host='api.bybit.com', port=443): Failed to resolve 'api.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-24 22:19:14,570 [INFO] main: No pairs for today — scanning now …
+2026-03-24 22:19:14,571 [INFO] scanner: Daily pair scan starting — scoring 60 pairs …
+2026-03-24 22:19:24,600 [WARNING] scanner: Score error BTCUSDT: HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/market/tickers?category=linear&symbol=BTCUSDT (Caused by NameResolutionError("HTTPSConnection(host='api.bybit.com', port=443): Failed to resolve 'api.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-24 22:19:34,773 [WARNING] scanner: Score error ETHUSDT: HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/market/tickers?category=linear&symbol=ETHUSDT (Caused by NameResolutionError("HTTPSConnection(host='api.bybit.com', port=443): Failed to resolve 'api.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-24 22:19:44,946 [WARNING] scanner: Score error SOLUSDT: HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/market/tickers?category=linear&symbol=SOLUSDT (Caused by NameResolutionError("HTTPSConnection(host='api.bybit.com', port=443): Failed to resolve 'api.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-24 22:22:28,431 [INFO] main: =======================================================
+2026-03-24 22:22:28,432 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-24 22:22:28,433 [INFO] main: =======================================================
+2026-03-24 22:22:28,439 [INFO] database: SQLite database ready → trades.db
+2026-03-24 22:22:30,059 [ERROR] main: Balance error on start: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:30).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-24 22:22:30,064 [INFO] main: No pairs for today — scanning now …
+2026-03-24 22:22:30,065 [INFO] scanner: Daily pair scan starting — scoring 60 pairs …
+2026-03-24 22:22:30,532 [WARNING] scanner: Score error BTCUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:30).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=BTCUSDT.
+2026-03-24 22:22:31,238 [WARNING] scanner: Score error ETHUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:31).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=ETHUSDT.
+2026-03-24 22:22:31,708 [WARNING] scanner: Score error SOLUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:31).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=SOLUSDT.
+2026-03-24 22:22:32,216 [WARNING] scanner: Score error BNBUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:32).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=BNBUSDT.
+2026-03-24 22:22:32,685 [WARNING] scanner: Score error XRPUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:32).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=XRPUSDT.
+2026-03-24 22:22:33,687 [WARNING] scanner: Score error DOGEUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:33).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=DOGEUSDT.
+2026-03-24 22:22:34,168 [WARNING] scanner: Score error AVAXUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:34).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=AVAXUSDT.
+2026-03-24 22:22:34,646 [WARNING] scanner: Score error LINKUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:34).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=LINKUSDT.
+2026-03-24 22:22:35,148 [WARNING] scanner: Score error ADAUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:35).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=ADAUSDT.
+2026-03-24 22:22:35,645 [WARNING] scanner: Score error MATICUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:35).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=MATICUSDT.
+2026-03-24 22:22:36,237 [WARNING] scanner: Score error DOTUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:36).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=DOTUSDT.
+2026-03-24 22:22:36,728 [WARNING] scanner: Score error LTCUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:36).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=LTCUSDT.
+2026-03-24 22:22:37,208 [WARNING] scanner: Score error UNIUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:37).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=UNIUSDT.
+2026-03-24 22:22:37,701 [WARNING] scanner: Score error ATOMUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:37).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=ATOMUSDT.
+2026-03-24 22:22:38,304 [WARNING] scanner: Score error NEARUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:38).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=NEARUSDT.
+2026-03-24 22:22:38,794 [WARNING] scanner: Score error AAVEUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:38).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=AAVEUSDT.
+2026-03-24 22:22:39,258 [WARNING] scanner: Score error FILUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:39).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=FILUSDT.
+2026-03-24 22:22:39,968 [WARNING] scanner: Score error APTUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:39).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=APTUSDT.
+2026-03-24 22:22:40,471 [WARNING] scanner: Score error ARBUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:40).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=ARBUSDT.
+2026-03-24 22:22:40,924 [WARNING] scanner: Score error OPUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:40).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=OPUSDT.
+2026-03-24 22:22:41,381 [WARNING] scanner: Score error INJUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:41).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=INJUSDT.
+2026-03-24 22:22:41,851 [WARNING] scanner: Score error SUIUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:41).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=SUIUSDT.
+2026-03-24 22:22:42,311 [WARNING] scanner: Score error SEIUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:42).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=SEIUSDT.
+2026-03-24 22:22:42,807 [WARNING] scanner: Score error TIAUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:42).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=TIAUSDT.
+2026-03-24 22:22:43,288 [WARNING] scanner: Score error PYTHUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:43).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=PYTHUSDT.
+2026-03-24 22:22:43,764 [WARNING] scanner: Score error WLDUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:43).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=WLDUSDT.
+2026-03-24 22:22:44,260 [WARNING] scanner: Score error STXUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:44).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=STXUSDT.
+2026-03-24 22:22:44,749 [WARNING] scanner: Score error RUNEUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:44).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=RUNEUSDT.
+2026-03-24 22:22:45,242 [WARNING] scanner: Score error HBARUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:45).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=HBARUSDT.
+2026-03-24 22:22:45,774 [WARNING] scanner: Score error EGLDUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:45).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=EGLDUSDT.
+2026-03-24 22:22:46,261 [WARNING] scanner: Score error SANDUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:46).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=SANDUSDT.
+2026-03-24 22:22:46,746 [WARNING] scanner: Score error MANAUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:46).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=MANAUSDT.
+2026-03-24 22:22:47,267 [WARNING] scanner: Score error GALAUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:47).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=GALAUSDT.
+2026-03-24 22:22:47,753 [WARNING] scanner: Score error FLOWUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:47).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=FLOWUSDT.
+2026-03-24 22:22:48,283 [WARNING] scanner: Score error KAVAUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:48).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=KAVAUSDT.
+2026-03-24 22:22:48,797 [WARNING] scanner: Score error APEUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:48).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=APEUSDT.
+2026-03-24 22:22:49,345 [WARNING] scanner: Score error GMXUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:49).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=GMXUSDT.
+2026-03-24 22:22:49,914 [WARNING] scanner: Score error DYDXUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:49).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=DYDXUSDT.
+2026-03-24 22:22:50,395 [WARNING] scanner: Score error CRVUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:50).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=CRVUSDT.
+2026-03-24 22:22:50,990 [WARNING] scanner: Score error SNXUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:50).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=SNXUSDT.
+2026-03-24 22:22:51,647 [WARNING] scanner: Score error PEPEUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:51).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=PEPEUSDT.
+2026-03-24 22:22:52,138 [WARNING] scanner: Score error SHIBUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:52).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=SHIBUSDT.
+2026-03-24 22:22:52,618 [WARNING] scanner: Score error FLOKIUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:52).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=FLOKIUSDT.
+2026-03-24 22:22:53,091 [WARNING] scanner: Score error BONKUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:53).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=BONKUSDT.
+2026-03-24 22:22:53,547 [WARNING] scanner: Score error WIFUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:53).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=WIFUSDT.
+2026-03-24 22:22:54,022 [WARNING] scanner: Score error JUPUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:54).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=JUPUSDT.
+2026-03-24 22:22:54,504 [WARNING] scanner: Score error RENDERUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:54).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=RENDERUSDT.
+2026-03-24 22:22:55,063 [WARNING] scanner: Score error FETUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:55).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=FETUSDT.
+2026-03-24 22:22:55,641 [WARNING] scanner: Score error AGIXUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:55).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=AGIXUSDT.
+2026-03-24 22:22:56,138 [WARNING] scanner: Score error OCEANUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:56).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=OCEANUSDT.
+2026-03-24 22:22:56,610 [WARNING] scanner: Score error ARKMUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:56).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=ARKMUSDT.
+2026-03-24 22:22:57,131 [WARNING] scanner: Score error STORJUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:57).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=STORJUSDT.
+2026-03-24 22:22:57,674 [WARNING] scanner: Score error CFXUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:57).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=CFXUSDT.
+2026-03-24 22:22:58,152 [WARNING] scanner: Score error 1000LUNCUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:58).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=1000LUNCUSDT.
+2026-03-24 22:22:58,627 [WARNING] scanner: Score error CKBUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:58).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=CKBUSDT.
+2026-03-24 22:22:59,169 [WARNING] scanner: Score error LDOUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:59).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=LDOUSDT.
+2026-03-24 22:22:59,888 [WARNING] scanner: Score error STGUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:22:59).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=STGUSDT.
+2026-03-24 22:23:01,530 [WARNING] scanner: Score error ZILUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:23:01).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=ZILUSDT.
+2026-03-24 22:23:02,312 [WARNING] scanner: Score error QNTUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:23:02).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=QNTUSDT.
+2026-03-24 22:23:03,016 [WARNING] scanner: Score error CHZUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:23:03).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=CHZUSDT.
+2026-03-24 22:23:03,168 [ERROR] scanner: Scan returned 0 pairs. Keeping yesterday's list.
+2026-03-24 22:23:03,188 [INFO] telegram: Telegram command listener started.
+2026-03-24 22:23:08,195 [INFO] main: Ready. Watching 0 pairs every 60s
+2026-03-24 22:23:08,208 [WARNING] main: No active pairs — running emergency scan …
+2026-03-24 22:23:08,209 [INFO] scanner: Daily pair scan starting — scoring 60 pairs …
+2026-03-24 22:23:08,712 [WARNING] scanner: Score error BTCUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:23:08).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=BTCUSDT.
+2026-03-24 22:23:09,227 [WARNING] scanner: Score error ETHUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:23:09).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=ETHUSDT.
+2026-03-24 22:23:10,024 [WARNING] scanner: Score error SOLUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:23:10).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=SOLUSDT.
+2026-03-24 22:23:10,530 [WARNING] scanner: Score error BNBUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:23:10).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=BNBUSDT.
+2026-03-24 22:23:11,125 [WARNING] scanner: Score error XRPUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:23:11).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=XRPUSDT.
+2026-03-24 22:23:12,266 [WARNING] scanner: Score error DOGEUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:23:12).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=DOGEUSDT.
+2026-03-24 22:23:12,953 [WARNING] scanner: Score error AVAXUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:23:12).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=AVAXUSDT.
+2026-03-24 22:23:13,668 [WARNING] scanner: Score error LINKUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:23:13).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=LINKUSDT.
+2026-03-24 22:23:14,256 [WARNING] scanner: Score error ADAUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:23:14).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=ADAUSDT.
+2026-03-24 22:23:15,014 [WARNING] scanner: Score error MATICUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:23:15).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=MATICUSDT.
+2026-03-24 22:23:15,515 [WARNING] scanner: Score error DOTUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:23:15).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=DOTUSDT.
+2026-03-24 22:23:16,054 [WARNING] scanner: Score error LTCUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:23:16).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=LTCUSDT.
+2026-03-24 22:23:16,740 [WARNING] scanner: Score error UNIUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:23:16).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=UNIUSDT.
+2026-03-24 22:23:17,301 [WARNING] scanner: Score error ATOMUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:23:17).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=ATOMUSDT.
+2026-03-24 22:23:18,158 [WARNING] scanner: Score error NEARUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:23:18).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=NEARUSDT.
+2026-03-24 22:23:18,655 [WARNING] scanner: Score error AAVEUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:23:18).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=AAVEUSDT.
+2026-03-24 22:23:19,393 [WARNING] scanner: Score error FILUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:23:19).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=FILUSDT.
+2026-03-24 22:23:19,902 [WARNING] scanner: Score error APTUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:23:19).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=APTUSDT.
+2026-03-24 22:23:20,440 [WARNING] scanner: Score error ARBUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:23:20).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=ARBUSDT.
+2026-03-24 22:23:21,106 [WARNING] scanner: Score error OPUSDT: You have breached the ip rate limit or your ip is from the usa. (ErrCode: 403) (ErrTime: 21:23:21).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=OPUSDT.
+2026-03-24 22:25:11,987 [INFO] main: =======================================================
+2026-03-24 22:25:11,991 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-24 22:25:11,994 [INFO] main: =======================================================
+2026-03-24 22:25:12,028 [INFO] database: SQLite database ready → trades.db
+2026-03-24 22:25:14,158 [INFO] main: Balance: $0.00 USDT
+2026-03-24 22:25:14,162 [INFO] main: No pairs for today — scanning now …
+2026-03-24 22:25:14,162 [INFO] scanner: Daily pair scan starting — scoring 60 pairs …
+2026-03-24 22:25:14,897 [WARNING] scanner: Score error BTCUSDT: Python int too large to convert to C long
+2026-03-24 22:25:15,769 [WARNING] scanner: Score error ETHUSDT: Python int too large to convert to C long
+2026-03-24 22:25:16,654 [WARNING] scanner: Score error SOLUSDT: Python int too large to convert to C long
+2026-03-24 22:25:18,058 [WARNING] scanner: Score error XRPUSDT: Python int too large to convert to C long
+2026-03-24 22:25:18,904 [WARNING] scanner: Score error DOGEUSDT: Python int too large to convert to C long
+2026-03-24 22:25:20,744 [WARNING] scanner: Score error ADAUSDT: Python int too large to convert to C long
+2026-03-24 22:25:21,235 [WARNING] scanner: Score error MATICUSDT: list index out of range
+2026-03-24 22:25:26,099 [WARNING] scanner: Score error APTUSDT: Python int too large to convert to C long
+2026-03-24 22:25:28,582 [WARNING] scanner: Score error SUIUSDT: Python int too large to convert to C long
+2026-03-24 22:25:39,048 [WARNING] scanner: Score error PEPEUSDT: params error: symbol invalid (ErrCode: 10001) (ErrTime: 21:25:39).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=PEPEUSDT.
+2026-03-24 22:25:39,853 [WARNING] scanner: Score error SHIBUSDT: params error: symbol invalid (ErrCode: 10001) (ErrTime: 21:25:39).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=SHIBUSDT.
+2026-03-24 22:25:40,362 [WARNING] scanner: Score error FLOKIUSDT: params error: symbol invalid (ErrCode: 10001) (ErrTime: 21:25:40).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=FLOKIUSDT.
+2026-03-24 22:25:41,132 [WARNING] scanner: Score error BONKUSDT: params error: symbol invalid (ErrCode: 10001) (ErrTime: 21:25:41).
+Request → GET https://api.bybit.com/v5/market/tickers: category=linear&symbol=BONKUSDT.
+2026-03-24 22:25:43,405 [WARNING] scanner: Score error FETUSDT: list index out of range
+2026-03-24 22:25:43,889 [WARNING] scanner: Score error AGIXUSDT: list index out of range
+2026-03-24 22:25:44,686 [WARNING] scanner: Score error OCEANUSDT: list index out of range
+2026-03-24 22:25:50,013 [ERROR] scanner: Scan returned 0 pairs. Keeping yesterday's list.
+2026-03-24 22:25:50,056 [INFO] telegram: Telegram command listener started.
+2026-03-24 22:25:52,271 [INFO] main: Ready. Watching 0 pairs every 60s
+2026-03-24 22:25:52,298 [WARNING] main: No active pairs — running emergency scan …
+2026-03-24 22:25:52,298 [INFO] scanner: Daily pair scan starting — scoring 60 pairs …
+2026-03-24 22:25:53,102 [WARNING] scanner: Score error BTCUSDT: Python int too large to convert to C long
+2026-03-24 22:25:54,121 [WARNING] scanner: Score error ETHUSDT: Python int too large to convert to C long
+2026-03-24 22:25:55,038 [WARNING] scanner: Score error SOLUSDT: Python int too large to convert to C long
+2026-03-24 22:25:56,539 [WARNING] scanner: Score error XRPUSDT: Python int too large to convert to C long
+2026-03-24 22:25:57,549 [WARNING] scanner: Score error DOGEUSDT: Python int too large to convert to C long
+2026-03-24 22:25:59,449 [WARNING] scanner: Score error ADAUSDT: Python int too large to convert to C long
+2026-03-24 22:25:59,940 [WARNING] scanner: Score error MATICUSDT: list index out of range
+2026-03-24 22:41:54,236 [INFO] main: =======================================================
+2026-03-24 22:41:54,237 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-24 22:41:54,238 [INFO] main: =======================================================
+2026-03-24 22:41:54,321 [INFO] database: SQLite database ready → trades.db
+2026-03-24 22:42:04,349 [ERROR] main: Balance error on start: HTTPSConnectionPool(host='api-testnet.bybit.com', port=443): Max retries exceeded with url: /v5/account/wallet-balance?accountType=UNIFIED (Caused by NameResolutionError("HTTPSConnection(host='api-testnet.bybit.com', port=443): Failed to resolve 'api-testnet.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-24 22:42:04,355 [INFO] main: No pairs for today — scanning now …
+2026-03-24 22:42:04,356 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-24 22:42:14,376 [WARNING] scanner: Score error BTCUSDT: HTTPSConnectionPool(host='api-testnet.bybit.com', port=443): Max retries exceeded with url: /v5/market/tickers?category=linear&symbol=BTCUSDT (Caused by NameResolutionError("HTTPSConnection(host='api-testnet.bybit.com', port=443): Failed to resolve 'api-testnet.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-24 22:42:24,547 [WARNING] scanner: Score error ETHUSDT: HTTPSConnectionPool(host='api-testnet.bybit.com', port=443): Max retries exceeded with url: /v5/market/tickers?category=linear&symbol=ETHUSDT (Caused by NameResolutionError("HTTPSConnection(host='api-testnet.bybit.com', port=443): Failed to resolve 'api-testnet.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-24 22:43:17,451 [INFO] main: =======================================================
+2026-03-24 22:43:17,451 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-24 22:43:17,452 [INFO] main: =======================================================
+2026-03-24 22:43:17,455 [INFO] database: SQLite database ready → trades.db
+2026-03-24 22:43:19,484 [ERROR] main: Balance error on start: Http status code is not 200. (ErrCode: 401) (ErrTime: 21:43:19).
+Request → GET https://api-testnet.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-24 22:43:19,489 [INFO] main: No pairs for today — scanning now …
+2026-03-24 22:43:19,490 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-24 22:43:20,520 [WARNING] scanner: Score error BTCUSDT: Python int too large to convert to C long
+2026-03-24 22:43:21,611 [WARNING] scanner: Score error ETHUSDT: Python int too large to convert to C long
+2026-03-24 22:43:22,776 [WARNING] scanner: Score error SOLUSDT: Python int too large to convert to C long
+2026-03-24 22:43:23,786 [WARNING] scanner: Score error BNBUSDT: Python int too large to convert to C long
+2026-03-24 22:43:24,879 [WARNING] scanner: Score error XRPUSDT: Python int too large to convert to C long
+2026-03-24 22:43:26,129 [WARNING] scanner: Score error AVAXUSDT: list index out of range
+2026-03-24 22:43:27,219 [WARNING] scanner: Score error LINKUSDT: Python int too large to convert to C long
+2026-03-24 22:43:28,462 [WARNING] scanner: Score error MATICUSDT: list index out of range
+2026-03-24 22:43:29,641 [WARNING] scanner: Score error LTCUSDT: list index out of range
+2026-03-24 22:43:30,922 [WARNING] scanner: Score error ATOMUSDT: list index out of range
+2026-03-24 22:43:32,711 [WARNING] scanner: Score error AAVEUSDT: Python int too large to convert to C long
+2026-03-24 22:43:33,966 [WARNING] scanner: Score error ARBUSDT: list index out of range
+2026-03-24 22:43:36,207 [WARNING] scanner: Score error SUIUSDT: Python int too large to convert to C long
+2026-03-24 22:43:36,853 [WARNING] scanner: Score error SEIUSDT: list index out of range
+2026-03-24 22:43:38,697 [WARNING] scanner: Score error STXUSDT: list index out of range
+2026-03-24 22:43:45,714 [WARNING] scanner: Score error SANDUSDT: Python int too large to convert to C long
+2026-03-24 22:43:50,088 [WARNING] scanner: Score error 1000PEPEUSDT: Python int too large to convert to C long
+2026-03-24 22:43:50,752 [WARNING] scanner: Score error 1000SHIBUSDT: params error: symbol invalid (ErrCode: 10001) (ErrTime: 21:43:50).
+Request → GET https://api-testnet.bybit.com/v5/market/tickers: category=linear&symbol=1000SHIBUSDT.
+2026-03-24 22:43:54,643 [WARNING] scanner: Score error FETUSDT: list index out of range
+2026-03-24 22:43:55,313 [WARNING] scanner: Score error AGIXUSDT: list index out of range
+2026-03-24 22:44:02,230 [WARNING] scanner: Score error SPELLUSDT: list index out of range
+2026-03-24 22:44:04,849 [WARNING] scanner: Score error WLDUSDT: list index out of range
+2026-03-24 22:44:05,593 [ERROR] scanner: Scan returned 0 pairs. Keeping yesterday's.
+2026-03-24 22:44:05,611 [INFO] telegram: Telegram command listener started.
+2026-03-24 22:44:07,917 [INFO] main: Ready. Watching 0 pairs every 60s
+2026-03-24 22:44:07,933 [WARNING] main: No active pairs — running emergency scan …
+2026-03-24 22:44:07,933 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-24 22:44:08,867 [WARNING] scanner: Score error BTCUSDT: Python int too large to convert to C long
+2026-03-24 22:44:09,881 [WARNING] scanner: Score error ETHUSDT: Python int too large to convert to C long
+2026-03-24 22:44:11,049 [WARNING] scanner: Score error SOLUSDT: Python int too large to convert to C long
+2026-03-24 22:44:12,208 [WARNING] scanner: Score error BNBUSDT: Python int too large to convert to C long
+2026-03-24 22:44:13,233 [WARNING] scanner: Score error XRPUSDT: Python int too large to convert to C long
+2026-03-24 22:44:14,478 [WARNING] scanner: Score error AVAXUSDT: list index out of range
+2026-03-24 22:44:15,612 [WARNING] scanner: Score error LINKUSDT: Python int too large to convert to C long
+2026-03-24 22:44:16,884 [WARNING] scanner: Score error MATICUSDT: list index out of range
+2026-03-24 22:52:24,859 [INFO] main: =======================================================
+2026-03-24 22:52:24,860 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-24 22:52:24,860 [INFO] main: =======================================================
+2026-03-24 22:52:24,867 [INFO] database: SQLite database ready → trades.db
+2026-03-24 22:52:26,619 [INFO] main: Balance: $0.00 USDT
+2026-03-24 22:52:26,622 [INFO] main: No pairs for today — scanning now …
+2026-03-24 22:52:26,622 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-24 22:52:27,579 [WARNING] scanner: Score error BTCUSDT: Python int too large to convert to C long
+2026-03-24 22:52:28,748 [WARNING] scanner: Score error ETHUSDT: Python int too large to convert to C long
+2026-03-24 22:52:29,892 [WARNING] scanner: Score error SOLUSDT: Python int too large to convert to C long
+2026-03-24 22:52:31,640 [WARNING] scanner: Score error XRPUSDT: Python int too large to convert to C long
+2026-03-24 22:52:32,717 [WARNING] scanner: Score error DOGEUSDT: Python int too large to convert to C long
+2026-03-24 22:52:35,082 [WARNING] scanner: Score error ADAUSDT: Python int too large to convert to C long
+2026-03-24 22:53:12,101 [INFO] main: =======================================================
+2026-03-24 22:53:12,102 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-24 22:53:12,102 [INFO] main: =======================================================
+2026-03-24 22:53:12,106 [INFO] database: SQLite database ready → trades.db
+2026-03-24 22:53:13,684 [INFO] main: Balance: $0.00 USDT
+2026-03-24 22:53:13,689 [INFO] main: No pairs for today — scanning now …
+2026-03-24 22:53:13,689 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-24 22:53:14,531 [WARNING] scanner: Score error BTCUSDT: Python int too large to convert to C long
+2026-03-24 22:53:15,540 [WARNING] scanner: Score error ETHUSDT: Python int too large to convert to C long
+2026-03-24 22:53:16,542 [WARNING] scanner: Score error SOLUSDT: Python int too large to convert to C long
+2026-03-24 22:53:18,316 [WARNING] scanner: Score error XRPUSDT: Python int too large to convert to C long
+2026-03-24 22:53:19,389 [WARNING] scanner: Score error DOGEUSDT: Python int too large to convert to C long
+2026-03-24 22:53:21,621 [WARNING] scanner: Score error ADAUSDT: Python int too large to convert to C long
+2026-03-24 22:53:22,431 [ERROR] scanner: Scan returned 0 pairs. Keeping yesterday's.
+2026-03-24 22:53:22,449 [INFO] telegram: Telegram command listener started.
+2026-03-24 22:53:24,911 [INFO] main: Ready. Watching 0 pairs every 60s
+2026-03-24 22:53:24,919 [WARNING] main: No active pairs — running emergency scan …
+2026-03-24 22:53:24,920 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-24 22:53:26,281 [WARNING] scanner: Score error BTCUSDT: Python int too large to convert to C long
+2026-03-24 22:53:27,524 [WARNING] scanner: Score error ETHUSDT: Python int too large to convert to C long
+2026-03-24 22:53:28,622 [WARNING] scanner: Score error SOLUSDT: Python int too large to convert to C long
+2026-03-24 22:53:30,337 [WARNING] scanner: Score error XRPUSDT: Python int too large to convert to C long
+2026-03-24 22:53:31,457 [WARNING] scanner: Score error DOGEUSDT: Python int too large to convert to C long
+2026-03-24 22:53:33,811 [WARNING] scanner: Score error ADAUSDT: Python int too large to convert to C long
+2026-03-24 22:53:34,548 [ERROR] scanner: Scan returned 0 pairs. Keeping yesterday's.
+2026-03-24 22:53:54,294 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-24 23:00:14,569 [INFO] main: =======================================================
+2026-03-24 23:00:14,570 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-24 23:00:14,570 [INFO] main: =======================================================
+2026-03-24 23:00:14,576 [INFO] database: SQLite database ready → trades.db
+2026-03-24 23:00:16,341 [INFO] main: Balance: $0.00 USDT
+2026-03-24 23:00:16,347 [INFO] main: No pairs for today — scanning now …
+2026-03-24 23:00:16,348 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-24 23:00:17,199 [WARNING] scanner: Score error BTCUSDT: list indices must be integers or slices, not str
+2026-03-24 23:00:18,216 [WARNING] scanner: Score error ETHUSDT: list indices must be integers or slices, not str
+2026-03-24 23:00:19,299 [WARNING] scanner: Score error SOLUSDT: list indices must be integers or slices, not str
+2026-03-24 23:00:21,039 [WARNING] scanner: Score error XRPUSDT: list indices must be integers or slices, not str
+2026-03-24 23:00:22,119 [WARNING] scanner: Score error DOGEUSDT: list indices must be integers or slices, not str
+2026-03-24 23:00:24,464 [WARNING] scanner: Score error ADAUSDT: list indices must be integers or slices, not str
+2026-03-24 23:00:25,184 [ERROR] scanner: Scan returned 0 pairs. Keeping yesterday's.
+2026-03-24 23:00:25,201 [INFO] telegram: Telegram command listener started.
+2026-03-24 23:00:27,181 [INFO] main: Ready. Watching 0 pairs every 60s
+2026-03-25 06:20:31,687 [INFO] main: =======================================================
+2026-03-25 06:20:31,688 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-25 06:20:31,688 [INFO] main: =======================================================
+2026-03-25 06:20:31,694 [INFO] database: SQLite database ready → trades.db
+2026-03-25 06:20:41,819 [ERROR] main: Balance error on start: HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/account/wallet-balance?accountType=UNIFIED (Caused by NameResolutionError("HTTPSConnection(host='api.bybit.com', port=443): Failed to resolve 'api.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-25 06:20:41,827 [INFO] main: No pairs for today — scanning now …
+2026-03-25 06:20:41,828 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-25 06:20:51,977 [WARNING] scanner: Score error BTCUSDT: HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/market/tickers?category=linear&symbol=BTCUSDT (Caused by NameResolutionError("HTTPSConnection(host='api.bybit.com', port=443): Failed to resolve 'api.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-25 06:21:02,265 [WARNING] scanner: Score error ETHUSDT: HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/market/tickers?category=linear&symbol=ETHUSDT (Caused by NameResolutionError("HTTPSConnection(host='api.bybit.com', port=443): Failed to resolve 'api.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-25 06:24:51,911 [INFO] main: =======================================================
+2026-03-25 06:24:51,912 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-25 06:24:51,912 [INFO] main: =======================================================
+2026-03-25 06:24:51,919 [INFO] database: SQLite database ready → trades.db
+2026-03-25 06:24:53,941 [INFO] main: Balance: $0.00 USDT
+2026-03-25 06:24:53,951 [INFO] main: No pairs for today — scanning now …
+2026-03-25 06:24:53,952 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-25 06:24:54,767 [WARNING] scanner: Score error BTCUSDT: list indices must be integers or slices, not str
+2026-03-25 06:24:55,732 [WARNING] scanner: Score error ETHUSDT: list indices must be integers or slices, not str
+2026-03-25 06:24:56,774 [WARNING] scanner: Score error SOLUSDT: list indices must be integers or slices, not str
+2026-03-25 06:24:58,481 [WARNING] scanner: Score error XRPUSDT: list indices must be integers or slices, not str
+2026-03-25 06:24:59,579 [WARNING] scanner: Score error DOGEUSDT: list indices must be integers or slices, not str
+2026-03-25 06:25:01,718 [WARNING] scanner: Score error ADAUSDT: list indices must be integers or slices, not str
+2026-03-25 06:25:02,500 [ERROR] scanner: Scan returned 0 pairs. Keeping yesterday's.
+2026-03-25 06:25:02,511 [INFO] telegram: Telegram command listener started.
+2026-03-25 06:25:04,709 [INFO] main: Ready. Watching 0 pairs every 60s
+2026-03-25 06:25:04,722 [WARNING] main: No active pairs — running emergency scan …
+2026-03-25 06:25:04,722 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-25 06:25:05,588 [WARNING] scanner: Score error BTCUSDT: list indices must be integers or slices, not str
+2026-03-25 06:25:06,667 [WARNING] scanner: Score error ETHUSDT: list indices must be integers or slices, not str
+2026-03-25 06:25:07,683 [WARNING] scanner: Score error SOLUSDT: list indices must be integers or slices, not str
+2026-03-25 06:25:09,179 [WARNING] scanner: Score error XRPUSDT: list indices must be integers or slices, not str
+2026-03-25 06:25:10,204 [WARNING] scanner: Score error DOGEUSDT: list indices must be integers or slices, not str
+2026-03-25 06:25:12,530 [WARNING] scanner: Score error ADAUSDT: list indices must be integers or slices, not str
+2026-03-25 06:25:13,242 [ERROR] scanner: Scan returned 0 pairs. Keeping yesterday's.
+2026-03-25 06:25:34,190 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-25 06:28:29,472 [INFO] main: =======================================================
+2026-03-25 06:28:29,473 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-25 06:28:29,473 [INFO] main: =======================================================
+2026-03-25 06:28:29,487 [INFO] database: SQLite database ready → trades.db
+2026-03-25 06:28:31,052 [INFO] main: Balance: $0.00 USDT
+2026-03-25 06:28:31,056 [INFO] main: No pairs for today — scanning now …
+2026-03-25 06:28:31,056 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-25 06:28:31,891 [WARNING] scanner: Score error BTCUSDT: list indices must be integers or slices, not str
+2026-03-25 06:28:32,953 [WARNING] scanner: Score error ETHUSDT: list indices must be integers or slices, not str
+2026-03-25 06:28:33,919 [WARNING] scanner: Score error SOLUSDT: list indices must be integers or slices, not str
+2026-03-25 06:28:35,647 [WARNING] scanner: Score error XRPUSDT: list indices must be integers or slices, not str
+2026-03-25 06:28:36,673 [WARNING] scanner: Score error DOGEUSDT: list indices must be integers or slices, not str
+2026-03-25 06:28:38,848 [WARNING] scanner: Score error ADAUSDT: list indices must be integers or slices, not str
+2026-03-25 06:28:39,640 [ERROR] scanner: Scan returned 0 pairs. Keeping yesterday's.
+2026-03-25 06:28:39,654 [INFO] telegram: Telegram command listener started.
+2026-03-25 06:28:41,886 [INFO] main: Ready. Watching 0 pairs every 60s
+2026-03-25 06:28:41,899 [WARNING] main: No active pairs — running emergency scan …
+2026-03-25 06:28:41,899 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-25 06:28:42,767 [WARNING] scanner: Score error BTCUSDT: list indices must be integers or slices, not str
+2026-03-25 06:28:43,734 [WARNING] scanner: Score error ETHUSDT: list indices must be integers or slices, not str
+2026-03-25 06:28:44,851 [WARNING] scanner: Score error SOLUSDT: list indices must be integers or slices, not str
+2026-03-25 06:28:46,437 [WARNING] scanner: Score error XRPUSDT: list indices must be integers or slices, not str
+2026-03-25 06:28:47,528 [WARNING] scanner: Score error DOGEUSDT: list indices must be integers or slices, not str
+2026-03-25 06:28:49,747 [WARNING] scanner: Score error ADAUSDT: list indices must be integers or slices, not str
+2026-03-25 06:28:50,462 [ERROR] scanner: Scan returned 0 pairs. Keeping yesterday's.
+2026-03-25 06:29:11,448 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-25 06:29:53,932 [INFO] main: =======================================================
+2026-03-25 06:29:53,933 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-25 06:29:53,933 [INFO] main: =======================================================
+2026-03-25 06:29:53,940 [INFO] database: SQLite database ready → trades.db
+2026-03-25 06:29:55,973 [INFO] main: Balance: $0.00 USDT
+2026-03-25 06:29:55,979 [INFO] main: No pairs for today — scanning now …
+2026-03-25 06:29:55,980 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-25 06:29:57,069 [WARNING] scanner: Score error BTCUSDT: list indices must be integers or slices, not str
+2026-03-25 06:29:58,345 [WARNING] scanner: Score error ETHUSDT: list indices must be integers or slices, not str
+2026-03-25 06:29:59,520 [WARNING] scanner: Score error SOLUSDT: list indices must be integers or slices, not str
+2026-03-25 06:30:01,217 [WARNING] scanner: Score error XRPUSDT: list indices must be integers or slices, not str
+2026-03-25 06:30:02,380 [WARNING] scanner: Score error DOGEUSDT: list indices must be integers or slices, not str
+2026-03-25 06:30:05,068 [WARNING] scanner: Score error ADAUSDT: list indices must be integers or slices, not str
+2026-03-25 06:30:05,886 [ERROR] scanner: Scan returned 0 pairs. Keeping yesterday's.
+2026-03-25 06:30:05,898 [INFO] telegram: Telegram command listener started.
+2026-03-25 06:30:08,086 [INFO] main: Ready. Watching 0 pairs every 60s
+2026-03-25 06:30:08,105 [WARNING] main: No active pairs — running emergency scan …
+2026-03-25 06:30:08,106 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-25 06:30:09,199 [WARNING] scanner: Score error BTCUSDT: list indices must be integers or slices, not str
+2026-03-25 06:30:10,447 [WARNING] scanner: Score error ETHUSDT: list indices must be integers or slices, not str
+2026-03-25 06:30:11,611 [WARNING] scanner: Score error SOLUSDT: list indices must be integers or slices, not str
+2026-03-25 06:30:13,547 [ERROR] pybit._http_manager: Too many visits. Exceeded the API Rate Limit. (ErrCode: 10006). Hit the API rate limit on https://api.bybit.com/v5/market/kline?category=linear&interval=60&limit=100&symbol=XRPUSDT. Sleeping then trying again.
+2026-03-25 06:30:13,548 [WARNING] scanner: Score error XRPUSDT: 'x-bapi-limit-reset-timestamp'
+2026-03-25 06:30:14,864 [WARNING] scanner: Score error DOGEUSDT: list indices must be integers or slices, not str
+2026-03-25 06:30:17,527 [WARNING] scanner: Score error ADAUSDT: list indices must be integers or slices, not str
+2026-03-25 06:30:18,323 [ERROR] scanner: Scan returned 0 pairs. Keeping yesterday's.
+2026-03-25 06:34:20,430 [INFO] main: =======================================================
+2026-03-25 06:34:20,433 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-25 06:34:20,434 [INFO] main: =======================================================
+2026-03-25 06:34:20,447 [INFO] database: SQLite database ready → trades.db
+2026-03-25 06:34:22,030 [INFO] main: Balance: $0.00 USDT
+2026-03-25 06:34:22,037 [INFO] main: No pairs for today — scanning now …
+2026-03-25 06:34:22,037 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-25 06:34:22,977 [WARNING] scanner: Score error BTCUSDT: list indices must be integers or slices, not str
+2026-03-25 06:34:24,015 [WARNING] scanner: Score error ETHUSDT: list indices must be integers or slices, not str
+2026-03-25 06:34:25,099 [WARNING] scanner: Score error SOLUSDT: list indices must be integers or slices, not str
+2026-03-25 06:34:26,838 [WARNING] scanner: Score error XRPUSDT: list indices must be integers or slices, not str
+2026-03-25 06:34:27,860 [WARNING] scanner: Score error DOGEUSDT: list indices must be integers or slices, not str
+2026-03-25 06:34:30,212 [WARNING] scanner: Score error ADAUSDT: list indices must be integers or slices, not str
+2026-03-25 06:34:31,005 [ERROR] scanner: Scan returned 0 pairs. Keeping yesterday's.
+2026-03-25 06:34:31,023 [INFO] telegram: Telegram command listener started.
+2026-03-25 06:34:33,202 [INFO] main: Ready. Watching 0 pairs every 60s
+2026-03-25 06:34:33,211 [WARNING] main: No active pairs — running emergency scan …
+2026-03-25 06:34:33,212 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-25 06:34:34,131 [WARNING] scanner: Score error BTCUSDT: list indices must be integers or slices, not str
+2026-03-25 06:34:35,157 [WARNING] scanner: Score error ETHUSDT: list indices must be integers or slices, not str
+2026-03-25 06:34:36,231 [WARNING] scanner: Score error SOLUSDT: list indices must be integers or slices, not str
+2026-03-25 06:34:37,938 [WARNING] scanner: Score error XRPUSDT: list indices must be integers or slices, not str
+2026-03-25 06:34:38,990 [WARNING] scanner: Score error DOGEUSDT: list indices must be integers or slices, not str
+2026-03-25 06:34:41,143 [WARNING] scanner: Score error ADAUSDT: list indices must be integers or slices, not str
+2026-03-25 06:34:41,921 [ERROR] scanner: Scan returned 0 pairs. Keeping yesterday's.
+2026-03-25 06:35:02,703 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-25 06:38:33,300 [INFO] main: =======================================================
+2026-03-25 06:38:33,301 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-25 06:38:33,301 [INFO] main: =======================================================
+2026-03-25 06:38:33,307 [INFO] database: SQLite database ready → trades.db
+2026-03-25 06:38:35,345 [INFO] main: Balance: $0.00 USDT
+2026-03-25 06:38:35,348 [INFO] main: No pairs for today — scanning now …
+2026-03-25 06:38:35,348 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-25 06:38:45,625 [INFO] scanner: Top 10 selected: ['ADAUSDT']
+2026-03-25 06:38:45,626 [INFO] scanner:   ADAUSDT          ADX=21.5  VOL=$73M  SCORE=0.0000
+2026-03-25 06:38:45,630 [INFO] telegram: Telegram command listener started.
+2026-03-25 06:38:47,853 [INFO] main: Ready. Watching 1 pairs every 60s
+2026-03-25 06:39:17,333 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-25 06:39:54,086 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-25 06:45:39,863 [INFO] main: =======================================================
+2026-03-25 06:45:39,865 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-25 06:45:39,865 [INFO] main: =======================================================
+2026-03-25 06:45:39,871 [INFO] database: SQLite database ready → trades.db
+2026-03-25 06:45:43,604 [INFO] main: Balance: $0.20 USDT
+2026-03-25 06:45:43,612 [INFO] telegram: Telegram command listener started.
+2026-03-25 06:45:45,823 [INFO] main: Ready. Watching 1 pairs every 60s
+2026-03-25 06:46:15,487 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-25 06:46:52,202 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-25 06:51:46,660 [INFO] main: =======================================================
+2026-03-25 06:51:46,661 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-25 06:51:46,661 [INFO] main: =======================================================
+2026-03-25 06:51:46,665 [INFO] database: SQLite database ready → trades.db
+2026-03-25 06:51:48,645 [ERROR] main: Balance error on start: Http status code is not 200. (ErrCode: 401) (ErrTime: 05:51:48).
+Request → GET https://api-testnet.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-25 06:51:48,651 [INFO] telegram: Telegram command listener started.
+2026-03-25 06:51:50,910 [INFO] main: Ready. Watching 1 pairs every 60s
+2026-03-25 06:51:51,333 [ERROR] main: Process error ADAUSDT: Http status code is not 200. (ErrCode: 401) (ErrTime: 05:51:51).
+Request → GET https://api-testnet.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-25 06:52:14,747 [INFO] main: =======================================================
+2026-03-25 06:52:14,748 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-25 06:52:14,748 [INFO] main: =======================================================
+2026-03-25 06:52:14,756 [INFO] database: SQLite database ready → trades.db
+2026-03-25 06:52:16,349 [INFO] main: Balance: $0.20 USDT
+2026-03-25 06:52:16,359 [INFO] telegram: Telegram command listener started.
+2026-03-25 06:52:18,509 [INFO] main: Ready. Watching 1 pairs every 60s
+2026-03-25 06:52:47,956 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-25 06:53:36,909 [INFO] main: =======================================================
+2026-03-25 06:53:36,910 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-25 06:53:36,910 [INFO] main: =======================================================
+2026-03-25 06:53:36,914 [INFO] database: SQLite database ready → trades.db
+2026-03-25 06:53:38,507 [INFO] main: Balance: $0.20 USDT
+2026-03-25 06:53:38,511 [INFO] telegram: Telegram command listener started.
+2026-03-25 06:53:40,393 [INFO] main: Ready. Watching 1 pairs every 60s
+2026-03-25 06:54:10,538 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-25 06:54:47,355 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-25 06:58:32,827 [INFO] main: =======================================================
+2026-03-25 06:58:32,828 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-25 06:58:32,828 [INFO] main: =======================================================
+2026-03-25 06:58:32,838 [INFO] database: SQLite database ready → trades.db
+2026-03-25 06:58:34,427 [INFO] main: Balance: $0.20 USDT
+2026-03-25 06:58:34,432 [INFO] telegram: Telegram command listener started.
+2026-03-25 06:58:36,610 [INFO] main: Ready. Watching 1 pairs every 60s
+2026-03-25 06:59:13,508 [INFO] main: =======================================================
+2026-03-25 06:59:13,509 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-25 06:59:13,510 [INFO] main: =======================================================
+2026-03-25 06:59:13,514 [INFO] database: SQLite database ready → trades.db
+2026-03-25 06:59:14,981 [INFO] main: Balance: $0.20 USDT
+2026-03-25 06:59:14,984 [INFO] telegram: Telegram command listener started.
+2026-03-25 06:59:16,840 [INFO] main: Ready. Watching 1 pairs every 60s
+2026-03-25 06:59:47,003 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-25 07:00:29,605 [INFO] main: =======================================================
+2026-03-25 07:00:29,606 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-25 07:00:29,606 [INFO] main: =======================================================
+2026-03-25 07:00:29,610 [INFO] database: SQLite database ready → trades.db
+2026-03-25 07:00:31,122 [INFO] main: Balance: $0.20 USDT
+2026-03-25 07:00:31,126 [INFO] telegram: Telegram command listener started.
+2026-03-25 07:00:33,375 [INFO] main: Ready. Watching 1 pairs every 60s
+2026-03-25 07:01:02,943 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-25 09:27:32,467 [INFO] main: =======================================================
+2026-03-25 09:27:32,468 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-25 09:27:32,468 [INFO] main: =======================================================
+2026-03-25 09:27:32,477 [INFO] database: SQLite database ready → trades.db
+2026-03-25 09:27:47,654 [ERROR] main: Balance error on start: HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/account/wallet-balance?accountType=UNIFIED (Caused by NameResolutionError("HTTPSConnection(host='api.bybit.com', port=443): Failed to resolve 'api.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-25 09:27:47,676 [INFO] telegram: Telegram command listener started.
+2026-03-25 09:27:57,633 [INFO] main: =======================================================
+2026-03-25 09:27:57,636 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-25 09:27:57,636 [INFO] main: =======================================================
+2026-03-25 09:27:57,646 [INFO] database: SQLite database ready → trades.db
+2026-03-25 09:28:07,751 [ERROR] main: Balance error on start: HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/account/wallet-balance?accountType=UNIFIED (Caused by NameResolutionError("HTTPSConnection(host='api.bybit.com', port=443): Failed to resolve 'api.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-25 09:28:07,764 [INFO] telegram: Telegram command listener started.
+2026-03-25 09:28:08,573 [INFO] main: Ready. Watching 1 pairs every 60s
+2026-03-25 09:28:18,757 [ERROR] main: Process error ADAUSDT: HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/account/wallet-balance?accountType=UNIFIED (Caused by NameResolutionError("HTTPSConnection(host='api.bybit.com', port=443): Failed to resolve 'api.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-25 09:29:42,722 [INFO] main: =======================================================
+2026-03-25 09:29:42,723 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-25 09:29:42,723 [INFO] main: =======================================================
+2026-03-25 09:29:42,727 [INFO] database: SQLite database ready → trades.db
+2026-03-25 09:29:52,848 [ERROR] main: Balance error on start: HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/account/wallet-balance?accountType=UNIFIED (Caused by NameResolutionError("HTTPSConnection(host='api.bybit.com', port=443): Failed to resolve 'api.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-25 09:29:52,860 [INFO] telegram: Telegram command listener started.
+2026-03-25 09:29:53,570 [INFO] main: Ready. Watching 1 pairs every 60s
+2026-03-25 09:30:03,836 [ERROR] main: Process error ADAUSDT: HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/account/wallet-balance?accountType=UNIFIED (Caused by NameResolutionError("HTTPSConnection(host='api.bybit.com', port=443): Failed to resolve 'api.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-25 09:37:03,999 [INFO] main: =======================================================
+2026-03-25 09:37:04,000 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-25 09:37:04,000 [INFO] main: =======================================================
+2026-03-25 09:37:04,005 [INFO] database: SQLite database ready → trades.db
+2026-03-25 09:37:05,774 [INFO] main: Balance: $0.20 USDT
+2026-03-25 09:37:05,779 [INFO] telegram: Telegram command listener started.
+2026-03-25 09:37:07,976 [INFO] main: Ready. Watching 1 pairs every 60s
+2026-03-25 09:37:37,464 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-25 09:51:26,439 [INFO] main: =======================================================
+2026-03-25 09:51:26,439 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-25 09:51:26,439 [INFO] main: =======================================================
+2026-03-25 09:51:26,446 [INFO] database: SQLite database ready → trades.db
+2026-03-25 09:51:28,199 [INFO] main: Balance: $0.20 USDT
+2026-03-25 09:51:28,204 [INFO] telegram: Telegram command listener started.
+2026-03-25 09:51:30,429 [INFO] main: Ready. Watching 1 pairs every 60s
+2026-03-25 09:52:00,348 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-25 10:00:39,455 [INFO] main: =======================================================
+2026-03-25 10:00:39,458 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-25 10:00:39,458 [INFO] main: =======================================================
+2026-03-25 10:00:39,563 [INFO] database: SQLite database ready → trades.db
+2026-03-25 10:00:41,653 [INFO] main: Balance: $0.20 USDT
+2026-03-25 10:00:41,663 [INFO] main: No pairs for today — scanning now …
+2026-03-25 10:00:41,664 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-25 10:01:17,009 [INFO] scanner: Top 10 selected: ['WIFUSDT', '1000PEPEUSDT', 'DOGEUSDT', 'RENDERUSDT', 'APTUSDT', 'CRVUSDT', 'ADAUSDT', 'AVAXUSDT', 'AAVEUSDT', 'BNBUSDT']
+2026-03-25 10:01:17,009 [INFO] scanner:   WIFUSDT          ADX=41.5  VOL=$30M  SCORE=0.6041
+2026-03-25 10:01:17,011 [INFO] scanner:   1000PEPEUSDT     ADX=31.0  VOL=$82M  SCORE=0.4602
+2026-03-25 10:01:17,012 [INFO] scanner:   DOGEUSDT         ADX=24.1  VOL=$151M  SCORE=0.4562
+2026-03-25 10:01:17,012 [INFO] scanner:   RENDERUSDT       ADX=32.1  VOL=$22M  SCORE=0.4240
+2026-03-25 10:01:17,012 [INFO] scanner:   APTUSDT          ADX=28.4  VOL=$40M  SCORE=0.4169
+2026-03-25 10:01:17,012 [INFO] scanner:   CRVUSDT          ADX=28.3  VOL=$23M  SCORE=0.2648
+2026-03-25 10:01:17,012 [INFO] scanner:   ADAUSDT          ADX=25.2  VOL=$68M  SCORE=0.2533
+2026-03-25 10:01:17,012 [INFO] scanner:   AVAXUSDT         ADX=25.9  VOL=$30M  SCORE=0.1358
+2026-03-25 10:01:17,013 [INFO] scanner:   AAVEUSDT         ADX=22.7  VOL=$27M  SCORE=0.0902
+2026-03-25 10:01:17,013 [INFO] scanner:   BNBUSDT          ADX=22.8  VOL=$40M  SCORE=0.0507
+2026-03-25 10:01:17,014 [INFO] telegram: Telegram command listener started.
+2026-03-25 10:01:19,098 [INFO] main: Ready. Watching 10 pairs every 60s
+2026-03-25 10:01:49,237 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-25 10:02:04,279 [WARNING] telegram: Telegram poll error: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8748119126:AAHItQlIsDphPyEkHhmujpDMh6Cqiz8J0aw/getUpdates?offset=1&timeout=30 (Caused by NameResolutionError("HTTPSConnection(host='api.telegram.org', port=443): Failed to resolve 'api.telegram.org' ([Errno 7] No address associated with hostname)"))
+2026-03-25 10:02:19,327 [WARNING] telegram: Telegram poll error: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8748119126:AAHItQlIsDphPyEkHhmujpDMh6Cqiz8J0aw/getUpdates?offset=1&timeout=30 (Caused by NameResolutionError("HTTPSConnection(host='api.telegram.org', port=443): Failed to resolve 'api.telegram.org' ([Errno 7] No address associated with hostname)"))
+2026-03-25 10:02:34,350 [WARNING] telegram: Telegram poll error: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8748119126:AAHItQlIsDphPyEkHhmujpDMh6Cqiz8J0aw/getUpdates?offset=1&timeout=30 (Caused by NameResolutionError("HTTPSConnection(host='api.telegram.org', port=443): Failed to resolve 'api.telegram.org' ([Errno 7] No address associated with hostname)"))
+2026-03-25 10:02:42,049 [ERROR] executor: Kline error WIFUSDT: HTTPSConnectionPool(host='api.bybit.com', port=443): Read timed out. (read timeout=10)
+2026-03-25 10:02:49,380 [WARNING] telegram: Telegram poll error: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8748119126:AAHItQlIsDphPyEkHhmujpDMh6Cqiz8J0aw/getUpdates?offset=1&timeout=30 (Caused by NameResolutionError("HTTPSConnection(host='api.telegram.org', port=443): Failed to resolve 'api.telegram.org' ([Errno 7] No address associated with hostname)"))
+2026-03-25 10:02:52,405 [ERROR] executor: Kline error 1000PEPEUSDT: HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/market/kline?category=linear&interval=60&limit=250&symbol=1000PEPEUSDT (Caused by NameResolutionError("HTTPSConnection(host='api.bybit.com', port=443): Failed to resolve 'api.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-25 10:03:02,753 [ERROR] executor: Kline error DOGEUSDT: HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/market/kline?category=linear&interval=60&limit=250&symbol=DOGEUSDT (Caused by NameResolutionError("HTTPSConnection(host='api.bybit.com', port=443): Failed to resolve 'api.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-25 10:03:04,405 [WARNING] telegram: Telegram poll error: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8748119126:AAHItQlIsDphPyEkHhmujpDMh6Cqiz8J0aw/getUpdates?offset=1&timeout=30 (Caused by NameResolutionError("HTTPSConnection(host='api.telegram.org', port=443): Failed to resolve 'api.telegram.org' ([Errno 7] No address associated with hostname)"))
+2026-03-25 10:03:13,106 [ERROR] executor: Kline error RENDERUSDT: HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/market/kline?category=linear&interval=60&limit=250&symbol=RENDERUSDT (Caused by NameResolutionError("HTTPSConnection(host='api.bybit.com', port=443): Failed to resolve 'api.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-25 10:03:19,432 [WARNING] telegram: Telegram poll error: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8748119126:AAHItQlIsDphPyEkHhmujpDMh6Cqiz8J0aw/getUpdates?offset=1&timeout=30 (Caused by NameResolutionError("HTTPSConnection(host='api.telegram.org', port=443): Failed to resolve 'api.telegram.org' ([Errno 7] No address associated with hostname)"))
+2026-03-25 10:03:23,478 [ERROR] executor: Kline error APTUSDT: HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/market/kline?category=linear&interval=60&limit=250&symbol=APTUSDT (Caused by NameResolutionError("HTTPSConnection(host='api.bybit.com', port=443): Failed to resolve 'api.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-25 10:03:33,843 [ERROR] executor: Kline error CRVUSDT: HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/market/kline?category=linear&interval=60&limit=250&symbol=CRVUSDT (Caused by NameResolutionError("HTTPSConnection(host='api.bybit.com', port=443): Failed to resolve 'api.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-25 10:03:34,457 [WARNING] telegram: Telegram poll error: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8748119126:AAHItQlIsDphPyEkHhmujpDMh6Cqiz8J0aw/getUpdates?offset=1&timeout=30 (Caused by NameResolutionError("HTTPSConnection(host='api.telegram.org', port=443): Failed to resolve 'api.telegram.org' ([Errno 7] No address associated with hostname)"))
+2026-03-25 10:03:44,205 [ERROR] executor: Kline error ADAUSDT: HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/market/kline?category=linear&interval=60&limit=250&symbol=ADAUSDT (Caused by NameResolutionError("HTTPSConnection(host='api.bybit.com', port=443): Failed to resolve 'api.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-25 10:03:49,487 [WARNING] telegram: Telegram poll error: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8748119126:AAHItQlIsDphPyEkHhmujpDMh6Cqiz8J0aw/getUpdates?offset=1&timeout=30 (Caused by NameResolutionError("HTTPSConnection(host='api.telegram.org', port=443): Failed to resolve 'api.telegram.org' ([Errno 7] No address associated with hostname)"))
+2026-03-25 10:03:59,077 [ERROR] executor: Kline error AVAXUSDT: HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/market/kline?category=linear&interval=60&limit=250&symbol=AVAXUSDT (Caused by NameResolutionError("HTTPSConnection(host='api.bybit.com', port=443): Failed to resolve 'api.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-25 10:04:08,688 [WARNING] telegram: Telegram poll error: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8748119126:AAHItQlIsDphPyEkHhmujpDMh6Cqiz8J0aw/getUpdates?offset=1&timeout=30 (Caused by NameResolutionError("HTTPSConnection(host='api.telegram.org', port=443): Failed to resolve 'api.telegram.org' ([Errno 7] No address associated with hostname)"))
+2026-03-25 10:04:09,469 [ERROR] executor: Kline error AAVEUSDT: HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/market/kline?category=linear&interval=60&limit=250&symbol=AAVEUSDT (Caused by NameResolutionError("HTTPSConnection(host='api.bybit.com', port=443): Failed to resolve 'api.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-25 10:36:42,383 [INFO] main: =======================================================
+2026-03-25 10:36:42,384 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-25 10:36:42,384 [INFO] main: =======================================================
+2026-03-25 10:36:42,390 [INFO] database: SQLite database ready → trades.db
+2026-03-25 10:36:43,944 [INFO] main: Balance: $0.20 USDT
+2026-03-25 10:36:43,949 [INFO] telegram: Telegram command listener started.
+2026-03-25 10:36:46,109 [INFO] main: Ready. Watching 10 pairs every 60s
+2026-03-25 10:37:16,440 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-25 10:37:53,295 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-25 10:38:30,073 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-25 10:47:37,122 [INFO] main: =======================================================
+2026-03-25 10:47:37,123 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-25 10:47:37,123 [INFO] main: =======================================================
+2026-03-25 10:47:37,256 [INFO] database: SQLite database ready → trades.db
+2026-03-25 10:47:39,172 [INFO] main: Balance: $0.20 USDT
+2026-03-25 10:47:39,180 [INFO] main: No pairs for today — scanning now …
+2026-03-25 10:47:39,181 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-25 10:48:12,204 [INFO] scanner: Top 10 selected: ['WIFUSDT', '1000PEPEUSDT', 'DOGEUSDT', 'APTUSDT', 'CRVUSDT', 'ADAUSDT', 'AVAXUSDT', 'AAVEUSDT', 'BNBUSDT']
+2026-03-25 10:48:12,206 [INFO] scanner:   WIFUSDT          ADX=41.5  VOL=$31M  SCORE=0.6022
+2026-03-25 10:48:12,207 [INFO] scanner:   1000PEPEUSDT     ADX=31.0  VOL=$83M  SCORE=0.4591
+2026-03-25 10:48:12,209 [INFO] scanner:   DOGEUSDT         ADX=24.1  VOL=$152M  SCORE=0.4562
+2026-03-25 10:48:12,210 [INFO] scanner:   APTUSDT          ADX=28.4  VOL=$38M  SCORE=0.4113
+2026-03-25 10:48:12,211 [INFO] scanner:   CRVUSDT          ADX=28.3  VOL=$23M  SCORE=0.2622
+2026-03-25 10:48:12,211 [INFO] scanner:   ADAUSDT          ADX=25.2  VOL=$67M  SCORE=0.2488
+2026-03-25 10:48:12,212 [INFO] scanner:   AVAXUSDT         ADX=25.9  VOL=$29M  SCORE=0.1307
+2026-03-25 10:48:12,213 [INFO] scanner:   AAVEUSDT         ADX=22.7  VOL=$27M  SCORE=0.0873
+2026-03-25 10:48:12,214 [INFO] scanner:   BNBUSDT          ADX=22.8  VOL=$42M  SCORE=0.0530
+2026-03-25 10:48:12,221 [INFO] telegram: Telegram command listener started.
+2026-03-25 10:48:14,596 [INFO] main: Ready. Watching 9 pairs every 60s
+2026-03-25 10:48:19,310 [INFO] executor: SIGNAL APTUSDT LONG entry=1.0688
+2026-03-25 10:48:20,704 [ERROR] executor: Order failed APTUSDT: Order does not meet minimum order value 5USDT (ErrCode: 110094) (ErrTime: 09:48:20).
+Request → POST https://api.bybit.com/v5/order/create: {"category": "linear", "symbol": "APTUSDT", "side": "Buy", "orderType": "Market", "qty": "0.33", "stopLoss": "1.0598", "takeProfit": "1.0822", "slTriggerBy": "LastPrice", "tpTriggerBy": "LastPrice", "timeInForce": "GoodTillCancel", "reduceOnly": false, "closeOnTrigger": false}.
+2026-03-25 10:48:43,973 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-25 11:13:13,303 [INFO] main: =======================================================
+2026-03-25 11:13:13,305 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-25 11:13:13,305 [INFO] main: =======================================================
+2026-03-25 11:13:13,309 [INFO] database: SQLite database ready → trades.db
+2026-03-25 11:13:14,752 [INFO] main: Balance: $0.20 USDT
+2026-03-25 11:13:14,757 [INFO] telegram: Telegram command listener started.
+2026-03-25 11:13:16,943 [INFO] main: Ready. Watching 9 pairs every 60s
+2026-03-25 11:13:45,611 [INFO] main: =======================================================
+2026-03-25 11:13:45,613 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-25 11:13:45,613 [INFO] main: =======================================================
+2026-03-25 11:13:45,624 [INFO] database: SQLite database ready → trades.db
+2026-03-25 11:13:46,998 [INFO] main: Balance: $0.20 USDT
+2026-03-25 11:13:47,008 [INFO] telegram: Telegram command listener started.
+2026-03-25 11:13:48,843 [INFO] main: Ready. Watching 9 pairs every 60s
+2026-03-25 11:15:07,512 [INFO] main: =======================================================
+2026-03-25 11:15:07,514 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-25 11:15:07,514 [INFO] main: =======================================================
+2026-03-25 11:15:07,606 [INFO] database: SQLite database ready → trades.db
+2026-03-25 11:15:09,064 [INFO] main: Balance: $0.20 USDT
+2026-03-25 11:15:09,071 [INFO] main: No pairs for today — scanning now …
+2026-03-25 11:15:09,072 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-25 11:15:41,180 [INFO] scanner: Top 10 selected: ['WIFUSDT', 'SOLUSDT', 'APTUSDT', '1000PEPEUSDT', 'CRVUSDT', 'ADAUSDT', 'DOGEUSDT', 'AVAXUSDT', 'AAVEUSDT', 'BNBUSDT']
+2026-03-25 11:15:41,181 [INFO] scanner:   WIFUSDT          ADX=42.1  VOL=$30M  SCORE=0.5827
+2026-03-25 11:15:41,182 [INFO] scanner:   SOLUSDT          ADX=20.0  VOL=$1146M  SCORE=0.4296
+2026-03-25 11:15:41,184 [INFO] scanner:   APTUSDT          ADX=27.3  VOL=$38M  SCORE=0.3863
+2026-03-25 11:15:41,185 [INFO] scanner:   1000PEPEUSDT     ADX=31.1  VOL=$83M  SCORE=0.3433
+2026-03-25 11:15:41,186 [INFO] scanner:   CRVUSDT          ADX=28.9  VOL=$23M  SCORE=0.3050
+2026-03-25 11:15:41,187 [INFO] scanner:   ADAUSDT          ADX=26.4  VOL=$67M  SCORE=0.2027
+2026-03-25 11:15:41,188 [INFO] scanner:   DOGEUSDT         ADX=24.7  VOL=$150M  SCORE=0.1986
+2026-03-25 11:15:41,188 [INFO] scanner:   AVAXUSDT         ADX=26.6  VOL=$29M  SCORE=0.1686
+2026-03-25 11:15:41,189 [INFO] scanner:   AAVEUSDT         ADX=23.8  VOL=$27M  SCORE=0.1441
+2026-03-25 11:15:41,190 [INFO] scanner:   BNBUSDT          ADX=24.6  VOL=$44M  SCORE=0.0896
+2026-03-25 11:15:41,193 [INFO] telegram: Telegram command listener started.
+2026-03-25 11:15:43,463 [INFO] main: Ready. Watching 10 pairs every 60s
+2026-03-25 11:16:12,895 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-25 11:16:49,881 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-25 11:17:26,588 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-25 11:18:03,443 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-25 11:22:49,893 [INFO] main: =======================================================
+2026-03-25 11:22:49,894 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-25 11:22:49,894 [INFO] main: =======================================================
+2026-03-25 11:22:49,904 [INFO] database: SQLite database ready → trades.db
+2026-03-25 11:22:51,907 [INFO] main: Balance: $0.20 USDT
+2026-03-25 11:22:51,915 [INFO] telegram: Telegram command listener started.
+2026-03-25 11:22:54,234 [INFO] main: Ready. Watching 10 pairs every 60s
+2026-03-25 11:23:23,703 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-25 11:26:17,549 [INFO] main: =======================================================
+2026-03-25 11:26:17,550 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-25 11:26:17,550 [INFO] main: =======================================================
+2026-03-25 11:26:17,554 [INFO] database: SQLite database ready → trades.db
+2026-03-25 11:26:18,970 [INFO] main: Balance: $0.20 USDT
+2026-03-25 11:26:18,974 [INFO] telegram: Telegram command listener started.
+2026-03-25 11:26:21,149 [INFO] main: Ready. Watching 10 pairs every 60s
+2026-03-25 11:26:50,758 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-26 14:20:33,739 [INFO] main: =======================================================
+2026-03-26 14:20:33,739 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-26 14:20:33,740 [INFO] main: =======================================================
+2026-03-26 14:20:33,743 [INFO] database: SQLite database ready → trades.db
+2026-03-26 14:20:43,779 [ERROR] main: Balance error on start: HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/account/wallet-balance?accountType=UNIFIED (Caused by NameResolutionError("HTTPSConnection(host='api.bybit.com', port=443): Failed to resolve 'api.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-26 14:20:43,786 [INFO] main: No pairs for today — scanning now …
+2026-03-26 14:20:43,787 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-26 23:43:57,446 [INFO] main: =======================================================
+2026-03-26 23:43:57,449 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-26 23:43:57,449 [INFO] main: =======================================================
+2026-03-26 23:43:57,577 [INFO] database: SQLite database ready → trades.db
+2026-03-26 23:43:59,329 [ERROR] main: Balance error on start: API key is invalid. (ErrCode: 10003) (ErrTime: 22:43:59).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:43:59,335 [INFO] main: No pairs for today — scanning now …
+2026-03-26 23:43:59,335 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-26 23:44:30,174 [INFO] scanner: Top 10 selected: ['WLDUSDT', 'ETHUSDT', 'BTCUSDT', 'SOLUSDT', 'AVAXUSDT', 'ADAUSDT', 'DOGEUSDT', 'AAVEUSDT', 'NEARUSDT', 'XRPUSDT']
+2026-03-26 23:44:30,176 [INFO] scanner:   WLDUSDT          ADX=42.0  VOL=$37M  SCORE=0.6510
+2026-03-26 23:44:30,178 [INFO] scanner:   ETHUSDT          ADX=36.7  VOL=$3495M  SCORE=0.6115
+2026-03-26 23:44:30,179 [INFO] scanner:   BTCUSDT          ADX=29.4  VOL=$5884M  SCORE=0.5573
+2026-03-26 23:44:30,180 [INFO] scanner:   SOLUSDT          ADX=40.7  VOL=$1059M  SCORE=0.5568
+2026-03-26 23:44:30,181 [INFO] scanner:   AVAXUSDT         ADX=40.6  VOL=$31M  SCORE=0.4626
+2026-03-26 23:44:30,181 [INFO] scanner:   ADAUSDT          ADX=39.8  VOL=$69M  SCORE=0.4609
+2026-03-26 23:44:30,182 [INFO] scanner:   DOGEUSDT         ADX=38.5  VOL=$192M  SCORE=0.4330
+2026-03-26 23:44:30,183 [INFO] scanner:   AAVEUSDT         ADX=35.8  VOL=$33M  SCORE=0.4102
+2026-03-26 23:44:30,184 [INFO] scanner:   NEARUSDT         ADX=35.4  VOL=$34M  SCORE=0.4059
+2026-03-26 23:44:30,184 [INFO] scanner:   XRPUSDT          ADX=37.1  VOL=$314M  SCORE=0.4034
+2026-03-26 23:44:30,188 [INFO] telegram: Telegram command listener started.
+2026-03-26 23:44:32,343 [INFO] main: Ready. Watching 10 pairs every 60s
+2026-03-26 23:44:32,678 [ERROR] main: Process error WLDUSDT: API key is invalid. (ErrCode: 10003) (ErrTime: 22:44:32).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:44:33,321 [ERROR] main: Process error ETHUSDT: API key is invalid. (ErrCode: 10003) (ErrTime: 22:44:33).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:44:33,976 [ERROR] main: Process error BTCUSDT: API key is invalid. (ErrCode: 10003) (ErrTime: 22:44:33).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:44:34,785 [ERROR] main: Process error SOLUSDT: API key is invalid. (ErrCode: 10003) (ErrTime: 22:44:34).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:44:35,396 [ERROR] main: Process error AVAXUSDT: API key is invalid. (ErrCode: 10003) (ErrTime: 22:44:35).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:44:36,027 [ERROR] main: Process error ADAUSDT: API key is invalid. (ErrCode: 10003) (ErrTime: 22:44:36).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:44:36,823 [ERROR] main: Process error DOGEUSDT: API key is invalid. (ErrCode: 10003) (ErrTime: 22:44:36).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:44:37,453 [ERROR] main: Process error AAVEUSDT: API key is invalid. (ErrCode: 10003) (ErrTime: 22:44:37).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:44:38,083 [ERROR] main: Process error NEARUSDT: API key is invalid. (ErrCode: 10003) (ErrTime: 22:44:38).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:44:38,734 [ERROR] main: Process error XRPUSDT: API key is invalid. (ErrCode: 10003) (ErrTime: 22:44:38).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:50:46,534 [INFO] main: =======================================================
+2026-03-26 23:50:46,536 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-26 23:50:46,536 [INFO] main: =======================================================
+2026-03-26 23:50:46,547 [INFO] database: SQLite database ready → trades.db
+2026-03-26 23:50:47,953 [ERROR] main: Balance error on start: API key is invalid. (ErrCode: 10003) (ErrTime: 22:50:47).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:50:47,959 [INFO] telegram: Telegram command listener started.
+2026-03-26 23:50:49,843 [INFO] main: Ready. Watching 10 pairs every 60s
+2026-03-26 23:50:50,222 [ERROR] main: Process error WLDUSDT: API key is invalid. (ErrCode: 10003) (ErrTime: 22:50:50).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:50:50,876 [ERROR] main: Process error ETHUSDT: API key is invalid. (ErrCode: 10003) (ErrTime: 22:50:50).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:50:51,513 [ERROR] main: Process error BTCUSDT: API key is invalid. (ErrCode: 10003) (ErrTime: 22:50:51).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:50:52,135 [ERROR] main: Process error SOLUSDT: API key is invalid. (ErrCode: 10003) (ErrTime: 22:50:52).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:50:52,799 [ERROR] main: Process error AVAXUSDT: API key is invalid. (ErrCode: 10003) (ErrTime: 22:50:52).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:50:53,482 [ERROR] main: Process error ADAUSDT: API key is invalid. (ErrCode: 10003) (ErrTime: 22:50:53).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:50:54,105 [ERROR] main: Process error DOGEUSDT: API key is invalid. (ErrCode: 10003) (ErrTime: 22:50:54).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:50:54,746 [ERROR] main: Process error AAVEUSDT: API key is invalid. (ErrCode: 10003) (ErrTime: 22:50:54).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:50:55,383 [ERROR] main: Process error NEARUSDT: API key is invalid. (ErrCode: 10003) (ErrTime: 22:50:55).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:50:56,021 [ERROR] main: Process error XRPUSDT: API key is invalid. (ErrCode: 10003) (ErrTime: 22:50:56).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:51:17,114 [INFO] main: =======================================================
+2026-03-26 23:51:17,115 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-26 23:51:17,115 [INFO] main: =======================================================
+2026-03-26 23:51:17,127 [INFO] database: SQLite database ready → trades.db
+2026-03-26 23:51:18,554 [ERROR] main: Balance error on start: API key is invalid. (ErrCode: 10003) (ErrTime: 22:51:18).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:51:18,559 [INFO] telegram: Telegram command listener started.
+2026-03-26 23:51:20,703 [INFO] main: Ready. Watching 10 pairs every 60s
+2026-03-26 23:51:21,039 [ERROR] main: Process error WLDUSDT: API key is invalid. (ErrCode: 10003) (ErrTime: 22:51:21).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:51:21,669 [ERROR] main: Process error ETHUSDT: API key is invalid. (ErrCode: 10003) (ErrTime: 22:51:21).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:51:22,299 [ERROR] main: Process error BTCUSDT: API key is invalid. (ErrCode: 10003) (ErrTime: 22:51:22).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:51:22,965 [ERROR] main: Process error SOLUSDT: API key is invalid. (ErrCode: 10003) (ErrTime: 22:51:22).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-26 23:51:23,594 [ERROR] main: Process error AVAXUSDT: API key is invalid. (ErrCode: 10003) (ErrTime: 22:51:23).
+Request → GET https://api.bybit.com/v5/account/wallet-balance: accountType=UNIFIED.
+2026-03-27 00:00:55,443 [INFO] main: =======================================================
+2026-03-27 00:00:55,444 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-27 00:00:55,444 [INFO] main: =======================================================
+2026-03-27 00:00:55,448 [INFO] database: SQLite database ready → trades.db
+2026-03-27 00:00:57,168 [INFO] main: Balance: $0.87 USDT
+2026-03-27 00:00:57,171 [INFO] main: No pairs for today — scanning now …
+2026-03-27 00:00:57,171 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-27 00:02:57,733 [INFO] main: =======================================================
+2026-03-27 00:02:57,734 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-27 00:02:57,734 [INFO] main: =======================================================
+2026-03-27 00:02:57,738 [INFO] database: SQLite database ready → trades.db
+2026-03-27 00:03:07,840 [ERROR] main: Balance error on start: HTTPSConnectionPool(host='api-demo.bybit.com', port=443): Max retries exceeded with url: /v5/account/wallet-balance?accountType=UNIFIED (Caused by NameResolutionError("HTTPSConnection(host='api-demo.bybit.com', port=443): Failed to resolve 'api-demo.bybit.com' ([Errno 7] No address associated with hostname)"))
+2026-03-27 00:03:07,846 [INFO] main: No pairs for today — scanning now …
+2026-03-27 00:03:07,847 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-27 00:03:32,744 [INFO] main: =======================================================
+2026-03-27 00:03:32,745 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-27 00:03:32,745 [INFO] main: =======================================================
+2026-03-27 00:03:32,752 [INFO] database: SQLite database ready → trades.db
+2026-03-27 00:03:34,644 [INFO] main: Balance: $50.87 USDT
+2026-03-27 00:03:34,647 [INFO] main: No pairs for today — scanning now …
+2026-03-27 00:03:34,647 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-27 00:04:06,892 [INFO] scanner: Top 10 selected: ['WLDUSDT', 'ETHUSDT', 'SOLUSDT', 'BTCUSDT', 'AVAXUSDT', 'ADAUSDT', 'XRPUSDT', 'AAVEUSDT', 'DOGEUSDT', 'NEARUSDT']
+2026-03-27 00:04:06,897 [INFO] scanner:   WLDUSDT          ADX=42.6  VOL=$37M  SCORE=0.6509
+2026-03-27 00:04:06,898 [INFO] scanner:   ETHUSDT          ADX=35.8  VOL=$3493M  SCORE=0.5646
+2026-03-27 00:04:06,899 [INFO] scanner:   SOLUSDT          ADX=40.0  VOL=$1055M  SCORE=0.5220
+2026-03-27 00:04:06,900 [INFO] scanner:   BTCUSDT          ADX=28.5  VOL=$5874M  SCORE=0.4834
+2026-03-27 00:04:06,901 [INFO] scanner:   AVAXUSDT         ADX=39.6  VOL=$31M  SCORE=0.4161
+2026-03-27 00:04:06,902 [INFO] scanner:   ADAUSDT          ADX=38.2  VOL=$69M  SCORE=0.4061
+2026-03-27 00:04:06,903 [INFO] scanner:   XRPUSDT          ADX=36.4  VOL=$313M  SCORE=0.3584
+2026-03-27 00:04:06,904 [INFO] scanner:   AAVEUSDT         ADX=34.7  VOL=$33M  SCORE=0.3475
+2026-03-27 00:04:06,905 [INFO] scanner:   DOGEUSDT         ADX=35.7  VOL=$192M  SCORE=0.3426
+2026-03-27 00:04:06,905 [INFO] scanner:   NEARUSDT         ADX=34.3  VOL=$34M  SCORE=0.3404
+2026-03-27 00:04:06,918 [INFO] telegram: Telegram command listener started.
+2026-03-27 00:04:10,287 [INFO] main: Ready. Watching 10 pairs every 60s
+2026-03-27 00:04:38,927 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 00:05:15,806 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 00:05:52,474 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 00:06:29,501 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:03:13,131 [INFO] main: =======================================================
+2026-03-27 18:03:13,132 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-27 18:03:13,133 [INFO] main: =======================================================
+2026-03-27 18:03:13,147 [INFO] database: SQLite database ready → trades.db
+2026-03-27 18:03:14,972 [INFO] main: Balance: $50.87 USDT
+2026-03-27 18:03:14,978 [INFO] telegram: Telegram command listener started.
+2026-03-27 18:03:16,970 [INFO] main: Ready. Watching 10 pairs every 60s
+2026-03-27 18:03:47,126 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:04:23,925 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:05:00,810 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:05:37,971 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:06:14,933 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:06:51,850 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:07:28,673 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:08:05,684 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:08:42,575 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:09:21,383 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:10:00,889 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:10:37,643 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:11:14,555 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:11:51,361 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:23:39,109 [INFO] main: =======================================================
+2026-03-27 18:23:39,110 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-27 18:23:39,110 [INFO] main: =======================================================
+2026-03-27 18:23:39,324 [INFO] database: SQLite database ready → trades.db
+2026-03-27 18:23:40,906 [INFO] main: Balance: $50.87 USDT
+2026-03-27 18:23:40,917 [INFO] main: No pairs for today — scanning now …
+2026-03-27 18:23:40,918 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-27 18:24:14,272 [INFO] scanner: Top 10 selected: ['BTCUSDT', 'WLDUSDT', 'ETHUSDT', 'SOLUSDT', 'AVAXUSDT', 'WIFUSDT', 'SUIUSDT', 'ADAUSDT', 'DOTUSDT', 'AAVEUSDT']
+2026-03-27 18:24:14,273 [INFO] scanner:   BTCUSDT          ADX=45.7  VOL=$7184M  SCORE=0.6646
+2026-03-27 18:24:14,274 [INFO] scanner:   WLDUSDT          ADX=56.5  VOL=$45M  SCORE=0.6511
+2026-03-27 18:24:14,275 [INFO] scanner:   ETHUSDT          ADX=43.1  VOL=$3618M  SCORE=0.5025
+2026-03-27 18:24:14,276 [INFO] scanner:   SOLUSDT          ADX=48.6  VOL=$1023M  SCORE=0.4528
+2026-03-27 18:24:14,277 [INFO] scanner:   AVAXUSDT         ADX=45.9  VOL=$33M  SCORE=0.3462
+2026-03-27 18:24:14,277 [INFO] scanner:   WIFUSDT          ADX=33.7  VOL=$22M  SCORE=0.2979
+2026-03-27 18:24:14,278 [INFO] scanner:   SUIUSDT          ADX=36.5  VOL=$55M  SCORE=0.2484
+2026-03-27 18:24:14,279 [INFO] scanner:   ADAUSDT          ADX=36.3  VOL=$73M  SCORE=0.2452
+2026-03-27 18:24:14,280 [INFO] scanner:   DOTUSDT          ADX=34.4  VOL=$41M  SCORE=0.2298
+2026-03-27 18:24:14,281 [INFO] scanner:   AAVEUSDT         ADX=33.0  VOL=$35M  SCORE=0.2278
+2026-03-27 18:24:14,284 [INFO] telegram: Telegram command listener started.
+2026-03-27 18:24:16,637 [INFO] main: Ready. Watching 10 pairs every 60s
+2026-03-27 18:24:46,230 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:25:23,096 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:25:59,890 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:26:36,737 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:27:13,486 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:27:50,553 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:28:27,526 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:29:04,371 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:29:41,153 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:30:17,895 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:30:54,948 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:31:34,075 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:32:11,025 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:32:47,867 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:33:24,667 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:34:01,468 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:34:39,387 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:35:16,194 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 18:35:52,985 [WARNING] telegram: Telegram poll error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-27 19:07:43,907 [INFO] main: =======================================================
+2026-03-27 19:07:43,916 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-27 19:07:43,916 [INFO] main: =======================================================
+2026-03-27 19:07:43,930 [INFO] database: SQLite database ready → trades.db
+2026-03-27 19:07:45,507 [INFO] main: Balance: $50.87 USDT
+2026-03-27 19:07:45,511 [INFO] telegram: Telegram command listener started.
+2026-03-27 19:07:47,434 [INFO] main: Ready. Watching 10 pairs every 60s
+2026-03-27 19:14:22,918 [INFO] main: =======================================================
+2026-03-27 19:14:22,919 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-27 19:14:22,920 [INFO] main: =======================================================
+2026-03-27 19:14:22,925 [INFO] database: SQLite database ready → trades.db
+2026-03-27 19:14:25,033 [INFO] main: Balance: $50.87 USDT
+2026-03-27 19:14:25,037 [INFO] telegram: Telegram command listener started.
+2026-03-27 19:14:27,577 [INFO] main: Ready. Watching 10 pairs every 60s
+2026-03-31 10:36:48,525 [INFO] main: =======================================================
+2026-03-31 10:36:48,526 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-31 10:36:48,526 [INFO] main: =======================================================
+2026-03-31 10:36:48,530 [INFO] database: SQLite database ready → trades.db
+2026-03-31 10:36:50,772 [INFO] main: Balance: $50.87 USDT
+2026-03-31 10:36:50,776 [INFO] main: No pairs for today — scanning now …
+2026-03-31 10:36:50,776 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-31 10:37:35,626 [ERROR] scanner: Scan returned 0 pairs. Keeping yesterday's.
+2026-03-31 10:37:35,645 [INFO] telegram: Telegram command listener started.
+2026-03-31 10:37:38,071 [INFO] main: Ready. Watching 0 pairs every 60s
+2026-03-31 10:37:38,087 [WARNING] main: No active pairs — running emergency scan …
+2026-03-31 10:37:38,087 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-31 10:39:30,713 [INFO] main: =======================================================
+2026-03-31 10:39:30,714 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-31 10:39:30,714 [INFO] main: =======================================================
+2026-03-31 10:39:30,827 [INFO] database: SQLite database ready → trades.db
+2026-03-31 10:39:32,609 [INFO] main: Balance: $50.87 USDT
+2026-03-31 10:39:32,612 [INFO] main: No pairs for today — scanning now …
+2026-03-31 10:39:32,612 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-31 10:41:11,817 [INFO] main: =======================================================
+2026-03-31 10:41:11,818 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-31 10:41:11,819 [INFO] main: =======================================================
+2026-03-31 10:41:11,823 [INFO] database: SQLite database ready → trades.db
+2026-03-31 10:41:14,070 [INFO] main: Balance: $50.87 USDT
+2026-03-31 10:41:14,073 [INFO] main: No pairs for today — scanning now …
+2026-03-31 10:41:14,073 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-31 10:42:11,180 [ERROR] scanner: Scan returned 0 pairs. Keeping yesterday's.
+2026-03-31 10:42:11,194 [INFO] telegram: Telegram command listener started.
+2026-03-31 10:42:13,530 [INFO] main: Ready. Watching 0 pairs every 60s
+2026-03-31 10:42:13,543 [WARNING] main: No active pairs — running emergency scan …
+2026-03-31 10:42:13,543 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-31 10:44:59,284 [INFO] main: =======================================================
+2026-03-31 10:44:59,285 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-31 10:44:59,285 [INFO] main: =======================================================
+2026-03-31 10:44:59,292 [INFO] database: SQLite database ready → trades.db
+2026-03-31 10:45:00,931 [INFO] main: Balance: $50.87 USDT
+2026-03-31 10:45:00,935 [INFO] main: No pairs for today — scanning now …
+2026-03-31 10:45:00,936 [INFO] scanner: Daily pair scan — scoring all pairs …
+2026-03-31 10:45:49,547 [INFO] main: =======================================================
+2026-03-31 10:45:49,547 [INFO] main:   VenuxTech Precision Pullback Bot — STARTING
+2026-03-31 10:45:49,548 [INFO] main: =======================================================
+2026-03-31 10:45:49,551 [INFO] database: SQLite database ready → trades.db
+2026-03-31 10:45:51,206 [INFO] main: Balance: $50.87 USDT
+2026-03-31 10:45:51,211 [INFO] main: No pairs for today — scanning now …
+2026-03-31 10:45:51,211 [INFO] scanner: Daily pair scan — scoring all pairs …
